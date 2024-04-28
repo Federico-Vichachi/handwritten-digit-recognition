@@ -8,11 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" type="image/png" sizes="16x16" href="ml.webp">
+    <link rel="icon" type="image/png" sizes="16x16" href="/handwritten-digit-recognition-cnn/web_app/ml.webp">
     <link rel="stylesheet" href="style.css">
     <title>Hanwritten digit recognition</title>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <base href="/web_app/"> 
 
 </head>
     <body>
@@ -49,7 +49,7 @@
         <div class="info-card">
             <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="me.webp" alt="Federico Vichachi" class="img-fluid w-100">
+                    <img src="/handwritten-digit-recognition-cnn/web_app/me.webp" alt="Federico Vichachi" class="img-fluid w-100">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
@@ -208,7 +208,7 @@
      // Load the model
      (async () => {
          console.log("Loading model...");
-         modelo = await tf.loadLayersModel("/handwritten-digit-recognition-cnn/model_export/model.json");
+         modelo = await tf.loadLayersModel("/handwritten-digit-recognition-cnn/model_export/model(2).json");
          console.log("Model loaded..."); 
      })();
    </script>    
